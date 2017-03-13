@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>demo</title>
+    <script type="text/javascript" src="http://7xio74.com2.z0.glb.qiniucdn.com/jquery-1.4.2.js"></script>
+<script type="text/javascript" src="ModalService/style.js"></script>
+</head>
+<body>
+<input class="bt" type="button" name="" id="btn1" value="点击弹窗1" onclick="aa()" />
+<input class="bt" type="button" name="" id="btn2" value="点击弹窗2" onclick="bb()" />
+<script type="text/javascript">
+
+function aa(){
+	modalService.open({
+		width:500,//提示窗口的宽度
+		height:100,//提示窗口的高度
+		title:'渠道明细',//提示窗口的标题
+		content:'t'//提示窗口的内容
+	});
+}
+    function bb() {
+		modalService.open({
+			width:500,//提示窗口的宽度
+			height:100,//提示窗口的高度
+			title:'渠道明细',//提示窗口的标题
+			content:'b'//提示窗口的内容
+		});
+    }
+
+
+
+</script>
+
+
+
+
+<!--弹窗模板-->
+<div class="template" id="t">
+    <p>我是一个大帅比</p>
+</div>
+<div class="template" id="b">
+	<p>我是一个大丑比</p>
+</div>
+</body>
+</html>
